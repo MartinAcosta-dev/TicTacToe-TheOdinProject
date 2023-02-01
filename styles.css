@@ -81,3 +81,12 @@ h1{
 .grid div:hover{
     background-color: rgb(255, 255, 255);
 }
+
+#parrafoVictoria{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.no-close .ui-dialog-titlebar-close {
+    display: none;
+  }
