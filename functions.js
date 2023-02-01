@@ -113,13 +113,14 @@ function showWinMesssagge(ganador){
         draggable: false,
         width: 500,
         dialogClass: "no-close",
-        buttons: [
-                    {
-                        text: "OK",
-                        click: function(){$( this ).dialog( "close" )}         
-                    }
-                ]
+        open: function(){
+            $('.ui-widget-overlay').bind('click',function(){
+                $('#dialog').dialog('close');
+            })
+        }
     }); 
+
+    $("div.ui-dialog-titlebar").hide();
 
     let parrafo = $("#parrafoVictoria");
     if(ganador == "Empate"){
