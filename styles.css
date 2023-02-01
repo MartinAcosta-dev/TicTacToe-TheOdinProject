@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: gainsboro;
+    background-color: gainsboro !important;
 }
 
 header{
@@ -16,31 +16,68 @@ header{
 
 h1{
     font-size: 35px;
+    font-family: 'Poppins', sans-serif;
 }
 
-#contenedor{
+.grid{
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas: 
+    "a b c"
+    "d e f"
+    "g h i";
+    justify-content: center;
+    align-items: center;   
+}
+
+#AA{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#AB{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#AC{
+    border-bottom: 1px solid black;
+}
+
+#BA{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#BB{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#BC{
+    border-bottom: 1px solid black;
+}
+
+#CA{
+    border-right: 1px solid black;
+}
+
+#CB{
+    border-right: 1px solid black;
+}
+
+.grid div{
+    height: 180px;
+    width: 180px;
+    font-size: 80px;
+    background-color: beige;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    user-select: none;
 }
 
-.casillero{
-    
-    border: 4px solid black;
-    margin: 2px;
-    width: 200px;
-    height: 200px;
-}
-
-
-
-#tablero{
-    margin-top: 100px;
-    border: 3px solid black;
-    width: 700px;
-    height: 700px;
+.grid div:hover{
     background-color: rgb(255, 255, 255);
 }
-
-
-
